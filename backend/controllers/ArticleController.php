@@ -8,6 +8,8 @@
 namespace backend\controllers;
 
 use backend\models\Article;
+use backend\models\Brand;
+use backend\models\Category;
 use backend\models\Detail;
 use yii\data\Pagination;
 use yii\web\Controller;
@@ -17,7 +19,7 @@ use yii\web\UploadedFile;
 class ArticleController extends Controller{
     //品牌列表
     public function actionIndex(){
-        //获取所有的品牌数据
+        //获取所有的文章数据
         $query=Article::find();
         //总条数  每页显示几条  当前第几页
         $total=$query->count();
@@ -35,6 +37,8 @@ class ArticleController extends Controller{
         $request= new Request();
         //实例化对象 获取其中验证规则
         $model= new Article();
+        //获取所有的品牌数据
+        $category=Category::find()->all();
         $detail = new Detail();
         //判断请求方式
         if($request->isPost){//请求方式是否为post方式
@@ -55,7 +59,7 @@ class ArticleController extends Controller{
             }
         }else{//请求方式不为post方式时
             // 加载添加页面  并
-            return $this->render('add',['model'=>$model]);
+            return $this->render('add',['model'=>$model,'category'=>$category]);
         }
     }
     //品牌的删除
@@ -91,9 +95,13 @@ class ArticleController extends Controller{
         }
         return $this->render('add',['model'=>$model]);
     }
+    //查看文章详情
     public function actionDetail($id){
-
+        //获取文章详情
         $detail = Detail::findOne(['article_id'=>$id]);
+        //文章标题
+        $article=Article::findOne(['id'=>$id]);
+        return $this->render('detail',['detail'=>$detail,'article'=>$article]);
 
     }
 }
