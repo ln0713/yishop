@@ -46,6 +46,8 @@ class ArticleController extends Controller{
             $model->load($request->post());
             //验证数据
             if($model->validate()){
+                //设置添加时间
+                $model->create_time=time();
                 $model->save();
                 $detail->article_id=$model->id;
                 $detail->content=$model->text;
@@ -79,6 +81,9 @@ class ArticleController extends Controller{
     public function actionEdit($id){
         //获取对应id的用户信息
         $model = Article::findOne(['id'=>$id]);
+        $category=Category::find()->all();
+        //
+        $detail = Detail::findOne(['article_id'=>$id]);
         //实例化对象
         $request = new Request();
         //判断请求方式
@@ -89,11 +94,13 @@ class ArticleController extends Controller{
             if($model->validate()){
                 //保存到数据表
                 $model->save();
+                $detail->content=$model->text;
+                $detail->save();
                 \Yii::$app->session->setFlash('success','文章修改成功');
                 return $this->redirect(['article/index']);
             }
         }
-        return $this->render('add',['model'=>$model]);
+        return $this->render('add',['model'=>$model,'category'=>$category,'detail'=>$detail]);
     }
     //查看文章详情
     public function actionDetail($id){
@@ -103,5 +110,18 @@ class ArticleController extends Controller{
         $article=Article::findOne(['id'=>$id]);
         return $this->render('detail',['detail'=>$detail,'article'=>$article]);
 
+    }
+    public function actions()
+    {
+        return [
+
+            'ueditor' => [
+                'class' => 'crazyfd\ueditor\Upload',
+                'config'=>[
+                    'uploadDir'=>date('Y/m/d')
+                ]
+
+            ],
+        ];
     }
 }

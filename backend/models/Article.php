@@ -20,7 +20,7 @@ class Article extends ActiveRecord {
     //验证规则
     public function rules(){
         return[
-          [['name','intro','text','article_category_id','sort','status','create_time'],'required','message'=>'{attribute}不能为空'],//所有不能为空
+          [['name','intro','text','article_category_id','sort','status'],'required','message'=>'{attribute}不能为空'],//所有不能为空
             ['sort','match','pattern'=>'/^\d{1,9}$/','message'=>'排序号格式不正确'],//排序号只能为整数
         ];
     }
@@ -32,7 +32,6 @@ class Article extends ActiveRecord {
             'article_category_id'    => '文章分类id',//标签名称
             'sort'    => '文章排序',//标签名称
             'status'    => '文章状态',//标签名称
-            'create_time'    => '创建时间',//标签名称
         ];
     }
     public function getCategory()
