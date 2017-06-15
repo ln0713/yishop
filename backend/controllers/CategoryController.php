@@ -13,7 +13,7 @@ use yii\data\Pagination;
 use yii\web\Controller;
 use yii\web\Request;
 
-class CategoryController extends Controller {
+class CategoryController extends PassController {
     public function actionIndex(){
         //分类列表
         //获取所有的分类数据

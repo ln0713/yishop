@@ -25,15 +25,15 @@ class Article extends ActiveRecord {
         ];
     }
     public function attributeLabels(){
-        return [
-            'name'    => '文章名称',//标签名称
-            'intro'    => '文章简介',//标签名称
-            'text'    => '文章详情',//标签名称
-            'article_category_id'    => '文章分类id',//标签名称
-            'sort'    => '文章排序',//标签名称
-            'status'    => '文章状态',//标签名称
-        ];
-    }
+    return [
+        'name'    => '文章名称',//标签名称
+        'intro'    => '文章简介',//标签名称
+        'text'    => '文章详情',//标签名称
+        'article_category_id'    => '文章分类id',//标签名称
+        'sort'    => '文章排序',//标签名称
+        'status'    => '文章状态',//标签名称
+    ];
+}
     public function getCategory()
     {
         //hasOne的第二个参数【k=>v】 k代表商品分类在分类中对应的id  v代表分类的id

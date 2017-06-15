@@ -16,7 +16,7 @@ use yii\web\Controller;
 use yii\web\Request;
 use yii\web\UploadedFile;
 
-class ArticleController extends Controller{
+class ArticleController extends PassController{
     //品牌列表
     public function actionIndex(){
         //获取所有的文章数据

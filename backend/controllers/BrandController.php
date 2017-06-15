@@ -15,7 +15,7 @@ use yii\web\Request;
 use yii\web\UploadedFile;
 use crazyfd\qiniu\Qiniu;
 
-class BrandController extends Controller{
+class BrandController extends PassController{
     //品牌列表
     public function actionIndex(){
         //获取所有的品牌数据
