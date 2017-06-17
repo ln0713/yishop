@@ -20,15 +20,14 @@ class UserEd extends ActiveRecord
     public static function tableName(){
         return 'user';
     }
-
     public function rules(){
         return[
-            [['username','email','status'],'required','message'=>'{attribute}不能为空'],//不能为空
-            [['img'], 'string', 'max' => 255],
+            [['username','email','status','img'],'required','message'=>'{attribute}不能为空'],//不能为空
+//            ['img','safe'],
+            //[['img'], 'string', 'max' => 255],
             [['old_password','new_password','two_password'],'string', 'max' => 16],
             //邮箱
             ['email', 'email'],
-            ['email', 'validateEmail'],
             //添加自定义验证
             ['username','validatePassword'],
             //两次密码验证
@@ -51,15 +50,6 @@ class UserEd extends ActiveRecord
             'last_at'=>'最近登陆时间',
             'last_ip'=>'最后登录ip',
         ];
-    }
-    public function validateEmail()
-    {
-        $user = User::findOne(['email' => $this->email]);
-        if ($user) {
-            if ($this->email == $user->email) {
-                $this->addError('email', '用户名已存该邮箱已被使用');
-            }
-        }
     }
     //自定义的面膜验证
     public function validatePassword(){

@@ -34,8 +34,6 @@ class LoginController extends Controller
                 $last_ip=$request->userIP;
                 $user->last_ip=$last_ip;
                 $user->last_at=time();
-                var_dump($request->auth_key);exit;
-                $user->auth_key=time();
                 $user->save(false);
                 return $this->redirect(['goods/index']);
             }

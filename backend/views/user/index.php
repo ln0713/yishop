@@ -25,6 +25,7 @@
             <td><?=$user->last_ip?></td>
             <td><?php echo \yii\bootstrap\Html::a('删除',['user/del?id='."$user->id"],['class'=>'btn btn-warning btn-xs']) ?>
                 <?php echo \yii\bootstrap\Html::a('修改',['user/edit?id='."$user->id"],['class'=>'btn btn-warning btn-xs']) ?>
+                <?php echo \yii\bootstrap\Html::a('权限管理',['rbac/adduser?id='."$user->id"],['class'=>'btn btn-warning btn-xs']) ?>
             </td>
         </tr>
     <?php endforeach;?>

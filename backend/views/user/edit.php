@@ -33,7 +33,7 @@ function(file, data, response) {
         //将上传成功后的图片地址(data.fileUrl)写入img标签
         $("#img_logo").attr("src",data.fileUrl).show();
         //将上传成功后的图片地址(data.fileUrl)写入img字段
-        $("#user-img").val(data.fileUrl);
+        $("#usered-img").val(data.fileUrl);
     }
 }
 EOF

@@ -50,7 +50,7 @@ class ArticleController extends PassController{
                 $model->create_time=time();
                 $model->save();
                 $detail->article_id=$model->id;
-                $detail->content=$model->text;
+                $detail->content=$detail->content;
                 $detail->save();
                 \Yii::$app->session->setFlash('success','品牌添加成功');
                 //跳转到列表页
@@ -61,7 +61,7 @@ class ArticleController extends PassController{
             }
         }else{//请求方式不为post方式时
             // 加载添加页面  并
-            return $this->render('add',['model'=>$model,'category'=>$category]);
+            return $this->render('add',['model'=>$model,'category'=>$category,'detail'=>$detail]);
         }
     }
     //品牌的删除
@@ -77,24 +77,28 @@ class ArticleController extends PassController{
         return $this->redirect(['article/index']);
 
     }
-    //品牌的修改
+    //文章的修改
     public function actionEdit($id){
         //获取对应id的用户信息
         $model = Article::findOne(['id'=>$id]);
         $category=Category::find()->all();
-        //
-        $detail = Detail::findOne(['article_id'=>$id]);
+        //文章详情
+        $details=new Detail();
+        $detail = $details->getDetail($id);
+        //$detail = Detail::findOne(['article_id'=>$id]);
+       //var_dump($detail);exit;
         //实例化对象
         $request = new Request();
         //判断请求方式
         if($request->isPost){//请求方式为post
             //加载数据
             $model->load($request->post());
+            $detail->load($request->post());
             //验证数据
-            if($model->validate()){
+            if($model->validate() && $detail->validate()){
                 //保存到数据表
                 $model->save();
-                $detail->content=$model->text;
+                //文章详情加载数据
                 $detail->save();
                 \Yii::$app->session->setFlash('success','文章修改成功');
                 return $this->redirect(['article/index']);

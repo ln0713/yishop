@@ -15,4 +15,18 @@ class Detail extends ActiveRecord {
     public static function tableName(){
         return 'article_detail';
     }
+    public function rules(){
+        return [
+            ['content','string']
+        ];
+    }
+    public function attributeLabels(){
+        return [
+            'article_id'=>'Id',
+            'content'=>'文章详情',
+        ];
+    }
+    public function getDetail($id){
+        return $detail = Detail::findOne(['article_id'=>$id]);
+    }
 }

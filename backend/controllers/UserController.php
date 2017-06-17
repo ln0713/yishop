@@ -14,6 +14,7 @@ use backend\models\User;
 use xj\uploadify\UploadAction;
 use yii\data\Pagination;
 //use backend\controllers\PassController;
+use yii\web\NotFoundHttpException;
 use yii\web\Request;
 
 class UserController extends PassController
@@ -23,7 +24,7 @@ class UserController extends PassController
         $total=$query->count();
         $page= new Pagination([
             'totalCount'=>$total,
-            'defaultPageSize'=>1,
+            'defaultPageSize'=>3,
         ]);
         $user=$query->offset($page->offset)->limit($page->limit)->all();
 
@@ -54,7 +55,19 @@ class UserController extends PassController
 
     }
     public function actionDel($id){
-
+        //根据id查询
+        $model= User::findOne(['id'=>$id]);
+        if($model){//查询结果不为空时
+            $model->status=0;
+            $model->save(false);
+            //var_dump($model);exit;
+            \Yii::$app->session->setFlash('success','该用户成功被禁用');
+            return $this->redirect(['user/index']);
+        }else{ //查询结果为空时
+            //提示错误信息
+            \Yii::$app->session->setFlash('success','用户不存在');
+            return $this->redirect(['user/index']);
+        }
     }
     public function actionEdit($id){
         $model= UserEd::findOne(['id'=>$id]);
