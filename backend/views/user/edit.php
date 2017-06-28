@@ -48,5 +48,6 @@ if($model->img){
 
 echo $from->field($model,'email')->textInput();//品牌排序号
 echo $from->field($model,'status')->radioList([0=>'禁用','1'=>'正常']);//品牌状态
+echo $from->field($model,'role',['inline'=>true])->checkboxList(\backend\models\UserEd::getRolesOptions());//用户角色
 echo \yii\bootstrap\Html::submitInput('提交',['class'=>'btn btn-info']);
 \yii\bootstrap\ActiveForm::end();

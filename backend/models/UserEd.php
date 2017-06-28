@@ -9,6 +9,7 @@
 namespace backend\models;
 
 use yii\db\ActiveRecord;
+use yii\helpers\ArrayHelper;
 
 class UserEd extends ActiveRecord
 {
@@ -16,6 +17,7 @@ class UserEd extends ActiveRecord
     public $code;
     public $old_password;
     public $new_password;
+    public $role;
     public static $statuOptions=[0=>'禁用',1=>'正常'];
     public static function tableName(){
         return 'user';
@@ -28,6 +30,7 @@ class UserEd extends ActiveRecord
             [['old_password','new_password','two_password'],'string', 'max' => 16],
             //邮箱
             ['email', 'email'],
+            ['role','safe'],
             //添加自定义验证
             ['username','validatePassword'],
             //两次密码验证
@@ -49,6 +52,7 @@ class UserEd extends ActiveRecord
             'updated_at'=>'更新时间',
             'last_at'=>'最近登陆时间',
             'last_ip'=>'最后登录ip',
+            'role'=>'角色',
         ];
     }
     //自定义的面膜验证
@@ -64,5 +68,24 @@ class UserEd extends ActiveRecord
             }
         }
 
+    }
+    //获取数据 回显
+    public function getData($id){
+        //根据id获取该用户所有角色
+        $authManager = \Yii::$app->authManager;
+        $roles = $authManager->getRolesByUser($id);
+//        var_dump($roles);exit;
+        //遍历角色 把所有角色放进表单的数组里
+        foreach($roles as $role){
+            $this->role[] = $role->name;
+        }
+        return true;
+
+    }
+    public static function getRolesOptions(){
+        $authManager = \Yii::$app->authManager;
+        $roles = $authManager->getRoles();//因为获取出来是对象
+        //所以需要返回成一个数组
+        return ArrayHelper::map($authManager->getRoles(),'name','name');
     }
 }

@@ -62,26 +62,34 @@
                 'template' => '{delete}  {update} {img} {news}',
                 'buttons' => [
                     'delete'=> function($url,$model,$key){
-                        return \yii\bootstrap\Html::a('<i class="glyphicon glyphicon-trash"></i>删除',
-                            ['goods/del','id'=>$key],
-                            ['class'=> 'btn btn-default btn-xs',
-                                'data' => ['confirm' => '你确定要删除！']
-                            ] );
-                       },
+                        if (Yii::$app->user->can('goods/del')) {
+                            return \yii\bootstrap\Html::a('<i class="glyphicon glyphicon-trash"></i>删除',
+                                ['goods/del','id'=>$key],
+                                ['class'=> 'btn btn-default btn-xs',
+                                    'data' => ['confirm' => '你确定要删除！']
+                                ] );
+                        }
+                    },
                     'update'=> function($url,$model,$key){
-                        return \yii\bootstrap\Html::a('<i class="fa fa-file"></i>修改',
-                            ['goods/edit','id'=>$key],
-                            ['class'=> 'btn btn-default btn-xs',]);
+                        if (Yii::$app->user->can('goods/edit')) {
+                            return \yii\bootstrap\Html::a('<i class="fa fa-file"></i>修改',
+                                ['goods/edit','id'=>$key],
+                                ['class'=> 'btn btn-default btn-xs',]);
+                        }
                     },
                     'img'=> function($url,$model,$key){
-                        return \yii\bootstrap\Html::a('<i class="fa fa-file"></i>查看相册',
-                            ['goods/imgs','id'=>$key],
-                            ['class'=> 'btn btn-default btn-xs',]);
+                        if (Yii::$app->user->can('goods/img')) {
+                            return \yii\bootstrap\Html::a('<i class="fa fa-file"></i>查看相册',
+                                ['goods/img','id'=>$key],
+                                ['class'=> 'btn btn-default btn-xs',]);
+                        }
                     },
                     'news'=> function($url,$model,$key){
-                        return \yii\bootstrap\Html::a('<i class="fa fa-file"></i>查看详情',
-                            ['goods/news','id'=>$key],
-                            ['class'=> 'btn btn-default btn-xs',]);
+                        if (Yii::$app->user->can('goods/news')) {
+                            return \yii\bootstrap\Html::a('<i class="fa fa-file"></i>查看详情',
+                                ['goods/news','id'=>$key],
+                                ['class'=> 'btn btn-default btn-xs',]);
+                        }
                     },
                 ],
 

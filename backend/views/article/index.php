@@ -18,15 +18,21 @@
             <td><?=$articles->sort?></td>
             <td><?php echo \backend\models\Brand::$statuOptions[$articles->status]  ?></td>
             <td><?=$articles->create_time?></td>
-            <td><?php echo \yii\bootstrap\Html::a('删除',['article/del?id='."$articles->id"],['class'=>'btn btn-warning btn-xs']) ?>
-                <?php echo \yii\bootstrap\Html::a('修改',['article/edit?id='."$articles->id"],['class'=>'btn btn-warning btn-xs']) ?>
-                <?php echo \yii\bootstrap\Html::a('查看文章详情',['article/detail?id='."$articles->id"],['class'=>'btn btn-warning btn-xs']) ?>
+            <td>
+                <?php if (Yii::$app->user->can('article/del')) {
+                    echo \yii\bootstrap\Html::a('删除',['article/del','id'=>$articles->id],['class'=>'btn btn-warning btn-xs']);}
+                ?>
+                <?php if (Yii::$app->user->can('article/edit')) {
+                    echo \yii\bootstrap\Html::a('修改', ['article/edit','id'=>$articles->id], ['class' => 'btn btn-warning btn-xs']);}?>
+                <?php echo \yii\bootstrap\Html::a('查看文章详情',['article/detail','id'=>$articles->id],['class'=>'btn btn-warning btn-xs']) ?>
             </td>
         </tr>
     <?php endforeach;?>
 </table>
 <?php
-echo \yii\bootstrap\Html::a('添加文章',['article/add'],['class'=>'btn btn-danger']);
+    if (Yii::$app->user->can('article/add')) {
+        echo \yii\bootstrap\Html::a('添加文章', ['article/add'], ['class' => 'btn btn-danger']);
+    }
 ?>
 <div></div>
 

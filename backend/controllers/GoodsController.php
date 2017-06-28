@@ -23,6 +23,7 @@ use yii\data\Pagination;
 use xj\uploadify\UploadAction;
 use yii\web\UploadedFile;
 use yii\web\NotFoundHttpException;
+use backend\filters\AccessFilter;
 
 class GoodsController extends PassController
 {

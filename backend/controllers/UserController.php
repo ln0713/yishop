@@ -11,11 +11,14 @@ namespace backend\controllers;
 
 use backend\models\UserEd;
 use backend\models\User;
+use backend\models\UserForm;
 use xj\uploadify\UploadAction;
 use yii\data\Pagination;
 //use backend\controllers\PassController;
+use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\web\Request;
+use backend\filters\AccessFilter;
 
 class UserController extends PassController
 {
@@ -47,12 +50,21 @@ class UserController extends PassController
                 //Yii::$app->security->generatePasswordHash('123456')
                 $model->password_hash=\Yii::$app->security->generatePasswordHash($model->password_hash);
                 $model->save(false);
+                //获取id
+                $iidd=$model->id;
+                //绑定角色
+                $authManager = \Yii::$app->authManager;
+                if(!$model->role==null){
+                    //获取角色
+                    foreach ($model->role as $role){
+                        $roles=$authManager->getRole($role);
+                        $authManager->assign($roles,$iidd);
+                    }
+                }
                 return $this->redirect(['user/index']);
             }
         }
             return $this->render('add',['model'=>$model]);
-
-
     }
     public function actionDel($id){
         //根据id查询
@@ -71,16 +83,23 @@ class UserController extends PassController
     }
     public function actionEdit($id){
         $model= UserEd::findOne(['id'=>$id]);
-        $request=new Request();
-            if($request->isPost){
-                $model->load($request->post());
-                if($model->validate()){
-                    //保存到数据表
-                    $model->updated_at=time();
-                    if($model->old_password){
-                        $model->password_hash=\Yii::$app->security->generatePasswordHash($model->new_password);
+            $model->getData($id);
+            if($model->load(\Yii::$app->request->post()) && $model->validate()){
+                //保存到数据表
+                $model->updated_at=time();
+                if($model->old_password){
+                    $model->password_hash=\Yii::$app->security->generatePasswordHash($model->new_password);
+                }
+                $model->save();
+                //绑定角色
+                $authManager = \Yii::$app->authManager;
+                $authManager->revokeAll($id);
+                if(!$model->role==null){
+                    //获取角色
+                    foreach ($model->role as $role){
+                        $roles=$authManager->getRole($role);
+                        $authManager->assign($roles,$model->id);
                     }
-                    $model->save();
                     \Yii::$app->session->setFlash('success','用户信息修改修改成功');
                     return $this->redirect(['user/index']);
                 }
@@ -100,11 +119,11 @@ class UserController extends PassController
                 //END METHOD
                 //BEGIN CLOSURE BY-HASH
                 'overwriteIfExist' => true,
-                'format' => function (UploadAction $action) {
-                    $fileext = $action->uploadfile->getExtension();
-                    $filename = sha1_file($action->uploadfile->tempName);
-                    return "{$filename}.{$fileext}";
-                },
+//                'format' => function (UploadAction $action) {
+//                    $fileext = $action->uploadfile->getExtension();
+//                    $filename = sha1_file($action->uploadfile->tempName);
+//                    return "{$filename}.{$fileext}";
+//                },
                 //END CLOSURE BY-HASH
                 //BEGIN CLOSURE BY TIME
                 'format' => function (UploadAction $action) {

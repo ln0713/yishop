@@ -12,8 +12,10 @@ use backend\models\Category;
 use yii\data\Pagination;
 use yii\web\Controller;
 use yii\web\Request;
+use backend\filters\AccessFilter;
 
 class CategoryController extends PassController {
+
     public function actionIndex(){
         //分类列表
         //获取所有的分类数据

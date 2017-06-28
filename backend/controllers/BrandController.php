@@ -14,9 +14,11 @@ use yii\web\Controller;
 use yii\web\Request;
 use yii\web\UploadedFile;
 use crazyfd\qiniu\Qiniu;
+use backend\filters\AccessFilter;
 
 class BrandController extends PassController{
     //品牌列表
+
     public function actionIndex(){
         //获取所有的品牌数据
         $query=Brand::find();

@@ -15,6 +15,7 @@ use yii\data\Pagination;
 use yii\web\Controller;
 use yii\web\Request;
 use yii\web\UploadedFile;
+use backend\filters\AccessFilter;
 
 class ArticleController extends PassController{
     //品牌列表

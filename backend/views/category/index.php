@@ -16,14 +16,16 @@
         <td><?=$categorys->sort?></td>
         <td><?php echo \backend\models\Brand::$statuOptions[$categorys->status]  ?></td>
         <td><?=$categorys->is_help?></td>
-        <td><?php echo \yii\bootstrap\Html::a('删除',['category/del?id='."$categorys->id"],['class'=>'btn btn-warning btn-xs']) ?>
-            <?php echo \yii\bootstrap\Html::a('修改',['category/edit?id='."$categorys->id"],['class'=>'btn btn-warning btn-xs']) ?>
+        <td><?php if (Yii::$app->user->can('category/del')) {
+                echo \yii\bootstrap\Html::a('删除',['category/del','id'=>$categorys->id],['class'=>'btn btn-warning btn-xs']);} ?>
+            <?php if (Yii::$app->user->can('category/edit')) {
+                echo \yii\bootstrap\Html::a('修改',['category/edit','id'=>$categorys->id],['class'=>'btn btn-warning btn-xs']);} ?>
         </td>
     </tr>
 <?php endforeach;?>
     </table>
-<?php
-echo \yii\bootstrap\Html::a('添加类型',['category/add'],['class'=>'btn btn-danger']);
+<?php if (Yii::$app->user->can('category/add')) {
+echo \yii\bootstrap\Html::a('添加类型',['category/add'],['class'=>'btn btn-danger']);}
 ?>
     <div></div>
 

@@ -18,31 +18,18 @@ class PassController extends Controller
 {
 //验证是否登给其权限
     public function behaviors(){
-//        return [
-//            'access'=>[
-//                'class'=>AccessControl::className(),
-//                'only'=>['index','add','edit','del'],
-//                'rules'=>[
-//                    [
-//                        'allow'=>true,
-//                        'actions'=>[''],
-//                        'roles'=>['?'],
-//                    ],
-//                    [
-//                        'allow'=>true,
-//                        'actions'=>['index','add','edit','del'],
-//                        'roles'=>['@'],
-//                    ],
-//                ],
-//            ],
-//        ];
+
         //使用RBAC过滤器
         return[
             'accessFilter' =>[
                 'class'=>AccessFilter::className(),
+                'nocheckactions'=>[
+                    //截取路由中的控制器
+                    strstr((\Yii::$app->request->pathInfo),'/',true).'/s-upload',
+                ]
             ]
         ];
-
     }
+
 }
 

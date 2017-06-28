@@ -17,14 +17,16 @@
             </td>
             <td><?=$categorie->parent_id==0? '顶级分类' : $categorie->parent->name ?></td>
             <td><?=$categorie->intro?></td>
-            <td><?php echo \yii\bootstrap\Html::a('删除',['goods_category/del?id='."$categorie->id"],['class'=>'btn btn-warning btn-xs']) ?>
-                <?php echo \yii\bootstrap\Html::a('修改',['goods_category/edit?id='."$categorie->id"],['class'=>'btn btn-warning btn-xs']) ?>
+            <td><?php if (Yii::$app->user->can('goods_category/del')) {
+                    echo \yii\bootstrap\Html::a('删除',['goods_category/del','id'=>$categorie->id],['class'=>'btn btn-warning btn-xs']);} ?>
+                <?php if (Yii::$app->user->can('goods_category/edit')) {
+                    echo \yii\bootstrap\Html::a('修改',['goods_category/edit','id'=>$categorie->id],['class'=>'btn btn-warning btn-xs']);} ?>
             </td>
         </tr>
     <?php endforeach;?>
 </table>
-<?php
-echo \yii\bootstrap\Html::a('添加分类',['goods_category/add'],['class'=>'btn btn-danger']);
+<?php if (Yii::$app->user->can('goods_category/add')) {
+echo \yii\bootstrap\Html::a('添加分类',['goods_category/add'],['class'=>'btn btn-danger']);}
 ?>
 <?php
 $js=<<<JS

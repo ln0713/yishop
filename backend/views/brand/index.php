@@ -16,14 +16,16 @@
             <td><?php echo \yii\bootstrap\Html::img("$brands->logo",['width'=>80]) ?></td>
             <td><?=$brands->sort?></td>
             <td><?php echo \backend\models\Brand::$statuOptions[$brands->status]  ?></td>
-            <td><?php echo \yii\bootstrap\Html::a('删除',['brand/del?id='."$brands->id"],['class'=>'btn btn-warning btn-xs']) ?>
-                <?php echo \yii\bootstrap\Html::a('修改',['brand/edit?id='."$brands->id"],['class'=>'btn btn-warning btn-xs']) ?>
+            <td><?php if (Yii::$app->user->can('brand/del')) {
+                    echo \yii\bootstrap\Html::a('删除',['brand/del','id'=>$brands->id],['class'=>'btn btn-warning btn-xs']);} ?>
+                <?php if (Yii::$app->user->can('brand/edit')) {
+                    echo \yii\bootstrap\Html::a('修改',['brand/edit','id'=>$brands->id],['class'=>'btn btn-warning btn-xs']);} ?>
             </td>
         </tr>
     <?php endforeach;?>
 </table>
-<?php
-echo \yii\bootstrap\Html::a('添加品牌',['brand/add'],['class'=>'btn btn-danger']);
+<?php if (Yii::$app->user->can('brand/add')) {
+echo \yii\bootstrap\Html::a('添加品牌',['brand/add'],['class'=>'btn btn-danger']);}
 ?>
 <div></div>
 

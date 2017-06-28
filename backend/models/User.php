@@ -9,12 +9,14 @@
 namespace backend\models;
 
 use yii\db\ActiveRecord;
+use yii\helpers\ArrayHelper;
 use yii\web\IdentityInterface;
 
 class User extends ActiveRecord implements IdentityInterface
 {
     public $two_password;
     public $code;
+    public $role;
     public static $statuOptions=[0=>'禁用',1=>'正常'];
     public static function tableName(){
         return 'user';
@@ -24,6 +26,8 @@ class User extends ActiveRecord implements IdentityInterface
         return[
             [['username','password_hash','two_password','email','status'],'required','message'=>'{attribute}不能为空'],//不能为空
             [['img'], 'string', 'max' => 255],
+            //juese
+            ['role','safe'],
             //邮箱
             ['email', 'email'],
             ['email', 'validateEmail'],
@@ -46,6 +50,7 @@ class User extends ActiveRecord implements IdentityInterface
             'updated_at'=>'更新时间',
             'last_at'=>'最近登陆时间',
             'last_ip'=>'最后登录ip',
+            'role'=>'角色',
         ];
     }
     //自定义验证
@@ -65,6 +70,60 @@ class User extends ActiveRecord implements IdentityInterface
                 $this->addError('email', '用户名已存该邮箱已被使用');
             }
         }
+    }
+    public static function getRolesOptions(){
+        $authManager = \Yii::$app->authManager;
+        $roles = $authManager->getRoles();//因为获取出来是对象
+        //所以需要返回成一个数组
+        return ArrayHelper::map($authManager->getRoles(),'name','name');
+    }
+
+    //添加角色
+    public function addRole($id){
+        //根据传过来的用户id  给他添加角色
+        $authManager = \Yii::$app->authManager;
+        //获取表单提交的角色
+        $roles  = $authManager->getRole($this->role);
+//        var_dump($this->role);exit;
+        //遍历所有选中的角色
+        foreach($this->role as $roleName){
+            $role=$authManager->getRole($roleName);
+            //将角色分配给用户
+            $authManager->assign($role,$id);
+        }
+        return true;
+    }
+
+
+    //修改角色
+    public function editRole($id){
+        $authManager = \Yii::$app->authManager;
+        //删除该用户的所有角色
+        $authManager->revokeAll($id);
+        //再把表单提交的角色赋值给该用户
+        //遍历所有选中的角色
+        foreach($this->role as $roleName){
+            $role=$authManager->getRole($roleName);
+            //将角色分配给用户
+            $authManager->assign($role,$id);
+        }
+        return true;
+
+
+    }
+
+    //获取数据 回显
+    public function getData($id){
+        //根据id获取该用户所有角色
+        $authManager = \Yii::$app->authManager;
+        $roles = $authManager->getRolesByUser($id);
+//        var_dump($roles);exit;
+        //遍历角色 把所有角色放进表单的数组里
+        foreach($roles as $role){
+            $this->role[] = $role->name;
+        }
+        return true;
+
     }
 
     /**

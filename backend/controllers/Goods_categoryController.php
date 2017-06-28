@@ -6,8 +6,10 @@ use yii\helpers\ArrayHelper;
 use yii\web\Controller;
 use yii\web\Request;
 use yii\web\NotFoundHttpException;
+use backend\filters\AccessFilter;
 
 class Goods_categoryController extends PassController{
+
     //首页
     public function actionIndex()
     {

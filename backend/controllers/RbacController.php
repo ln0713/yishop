@@ -14,6 +14,7 @@ use backend\models\RoleForm;
 use backend\models\UserForm;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
+use backend\filters\AccessFilter;
 
 class RbacController extends PassController
 {
