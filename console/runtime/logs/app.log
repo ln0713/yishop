@@ -1,0 +1,476 @@
+2017-06-08 15:34:18 [-][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'yi2shop'' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Connection.php:630
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\Connection.php(630): PDO->__construct('mysql:host=loca...', 'root', 'root', NULL)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Connection.php(563): yii\db\Connection->createPdoInstance()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare(true)
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\db\mysql\Schema.php(199): yii\db\Command->queryAll()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\db\mysql\Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\db\Schema.php(152): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#11 D:\web\yi2shop\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(774): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#12 D:\web\yi2shop\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(138): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#13 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#14 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#16 D:\web\yi2shop\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#17 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('', Array)
+#18 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#19 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#20 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#21 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#22 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1049] Unknown database 'yi2shop'' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Connection.php:568
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\Connection.php(896): yii\db\Connection->open()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Connection.php(883): yii\db\Connection->getMasterPdo()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php(896): yii\db\Command->prepare(true)
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\db\mysql\Schema.php(199): yii\db\Command->queryAll()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\db\mysql\Schema.php(98): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\db\Schema.php(152): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\console\controllers\MigrateController.php(199): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(774): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(138): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#12 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#13 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#14 D:\web\yi2shop\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('', Array)
+#15 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('', Array)
+#16 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#17 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#18 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#19 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#20 {main}
+Additional Information:
+
+2017-06-08 15:34:16 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ln0713\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-Q4RPAI4'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ln0713'
+    'LOCALAPPDATA' => 'C:\\Users\\ln0713\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-Q4RPAI4'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ln0713\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\Users\\ln0713\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpstudy\\php\\php-5.6.27-nts'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4501'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;D:\\Svn\\PowerShellModules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-Q4RPAI4'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-Q4RPAI4'
+    'USERNAME' => 'ln0713'
+    'USERPROFILE' => 'C:\\Users\\ln0713'
+    'VISUALSVN_SERVER' => 'D:\\Svn\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\web\\yi2shop\\'
+    'PHP_SELF' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_NAME' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_FILENAME' => 'D:\\web\\yi2shop\\yii'
+    'PATH_TRANSLATED' => 'D:\\web\\yi2shop\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1496907256.7037
+    'REQUEST_TIME' => 1496907256
+    'argv' => [
+        0 => 'D:\\web\\yi2shop\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2017-06-09 18:19:49 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: migrate/create_goods_category_table' in D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('create_goods_ca...', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('create_goods_ca...', Array)
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/create_...', Array)
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/create_...', Array)
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#6 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "migrate/create_goods_category_table".' in D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/create_...', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#3 {main}
+2017-06-09 18:19:49 [-][-][-][info][application] $_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ln0713\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'DESKTOP-Q4RPAI4'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ln0713'
+    'LOCALAPPDATA' => 'C:\\Users\\ln0713\\AppData\\Local'
+    'LOGONSERVER' => '\\\\DESKTOP-Q4RPAI4'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\ln0713\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ln0713\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpstudy\\php\\php-5.6.27-nts;C:\\Users\\ln0713\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '4501'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;D:\\Svn\\PowerShellModules'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'DESKTOP-Q4RPAI4'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-Q4RPAI4'
+    'USERNAME' => 'ln0713'
+    'USERPROFILE' => 'C:\\Users\\ln0713'
+    'VISUALSVN_SERVER' => 'D:\\Svn\\'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\web\\yi2shop\\'
+    'PHP_SELF' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_NAME' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_FILENAME' => 'D:\\web\\yi2shop\\yii'
+    'PATH_TRANSLATED' => 'D:\\web\\yi2shop\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497003589.2574
+    'REQUEST_TIME' => 1497003589
+    'argv' => [
+        0 => 'D:\\web\\yi2shop\\yii'
+        1 => 'migrate/create_goods_category_table'
+    ]
+    'argc' => 2
+]
+2017-06-18 11:00:10 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "mifreate".' in D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('mifreate', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('mifreate', Array)
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "mifreate".' in D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('mifreate', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#3 {main}
+2017-06-18 11:00:10 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-Q4RPAI4'
+    'LOCALAPPDATA' => 'C:\\Users\\ln0713\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'DESKTOP-Q4RPAI4'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\DESKTOP-Q4RPAI4'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;D:\\Svn\\PowerShellModules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'C:\\Users\\ln0713\\OneDrive'
+    'APPDATA' => 'C:\\Users\\ln0713\\AppData\\Roaming'
+    'USERNAME' => 'ln0713'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'VISUALSVN_SERVER' => 'D:\\Svn\\'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ln0713\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpstudy\\php\\php-5.6.27-nts;C:\\Users\\ln0713\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'DESKTOP-Q4RPAI4'
+    'PROCESSOR_REVISION' => '4501'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\ln0713'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\ln0713'
+    'TMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\web\\yi2shop\\'
+    'PHP_SELF' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_NAME' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_FILENAME' => 'D:\\web\\yi2shop\\yii'
+    'PATH_TRANSLATED' => 'D:\\web\\yi2shop\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497754810.8003
+    'REQUEST_TIME' => 1497754810
+    'argv' => [
+        0 => 'D:\\web\\yi2shop\\yii'
+        1 => 'mifreate'
+    ]
+    'argc' => 2
+]
+2017-06-19 11:31:34 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "migrrate/create".' in D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrrate/create', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrrate/create', Array)
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "migrrate/create".' in D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrrate/create', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#3 {main}
+2017-06-19 11:31:34 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-Q4RPAI4'
+    'LOCALAPPDATA' => 'C:\\Users\\ln0713\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'DESKTOP-Q4RPAI4'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\DESKTOP-Q4RPAI4'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;D:\\Svn\\PowerShellModules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'C:\\Users\\ln0713\\OneDrive'
+    'APPDATA' => 'C:\\Users\\ln0713\\AppData\\Roaming'
+    'USERNAME' => 'ln0713'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'VISUALSVN_SERVER' => 'D:\\Svn\\'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ln0713\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpstudy\\php\\php-5.6.27-nts;C:\\Users\\ln0713\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'DESKTOP-Q4RPAI4'
+    'PROCESSOR_REVISION' => '4501'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\ln0713'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\ln0713'
+    'TMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\web\\yi2shop\\'
+    'PHP_SELF' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_NAME' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_FILENAME' => 'D:\\web\\yi2shop\\yii'
+    'PATH_TRANSLATED' => 'D:\\web\\yi2shop\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1497843094.5207
+    'REQUEST_TIME' => 1497843094
+    'argv' => [
+        0 => 'D:\\web\\yi2shop\\yii'
+        1 => 'migrrate/create'
+        2 => 'create_member_table'
+    ]
+    'argc' => 3
+]
+2017-06-25 09:30:25 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "mrigrate/crate".' in D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php:532
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('mrigrate/crate', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('mrigrate/crate', Array)
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "mrigrate/crate".' in D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('mrigrate/crate', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#3 {main}
+2017-06-25 09:30:25 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-Q4RPAI4'
+    'LOCALAPPDATA' => 'C:\\Users\\ln0713\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'DESKTOP-Q4RPAI4'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\DESKTOP-Q4RPAI4'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;D:\\Svn\\PowerShellModules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'C:\\Users\\ln0713\\OneDrive'
+    'APPDATA' => 'C:\\Users\\ln0713\\AppData\\Roaming'
+    'USERNAME' => 'ln0713'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'VISUALSVN_SERVER' => 'D:\\Svn\\'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ln0713\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpstudy\\php\\php-5.6.27-nts;C:\\Users\\ln0713\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'DESKTOP-Q4RPAI4'
+    'PROCESSOR_REVISION' => '4501'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\ln0713'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\ln0713'
+    'TMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\web\\yi2shop\\'
+    'PHP_SELF' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_NAME' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_FILENAME' => 'D:\\web\\yi2shop\\yii'
+    'PATH_TRANSLATED' => 'D:\\web\\yi2shop\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1498354225.0155
+    'REQUEST_TIME' => 1498354225
+    'argv' => [
+        0 => 'D:\\web\\yi2shop\\yii'
+        1 => 'mrigrate/crate'
+        2 => 'crate_order_table'
+    ]
+    'argc' => 3
+]
+2017-06-25 09:31:18 [-][-][-][error][yii\console\UnknownCommandException] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: migrate/crate' in D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Controller.php(128): yii\base\Controller->runAction('crate', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\console\Controller->runAction('crate', Array)
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/crate', Array)
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/crate', Array)
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#5 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#6 {main}
+
+Next exception 'yii\console\UnknownCommandException' with message 'Unknown command "migrate/crate".' in D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php:183
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/crate', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 D:\web\yi2shop\yii(27): yii\base\Application->run()
+#3 {main}
+2017-06-25 09:31:17 [-][-][-][info][application] $_SERVER = [
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROMPT' => '$P$G'
+    'USERDOMAIN_ROAMINGPROFILE' => 'DESKTOP-Q4RPAI4'
+    'LOCALAPPDATA' => 'C:\\Users\\ln0713\\AppData\\Local'
+    'PROCESSOR_LEVEL' => '6'
+    'USERDOMAIN' => 'DESKTOP-Q4RPAI4'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'LOGONSERVER' => '\\\\DESKTOP-Q4RPAI4'
+    'SynaProgDir' => 'Synaptics\\SynTP'
+    'SESSIONNAME' => 'Console'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PSModulePath' => 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules;D:\\Svn\\PowerShellModules'
+    'SystemDrive' => 'C:'
+    'OneDrive' => 'C:\\Users\\ln0713\\OneDrive'
+    'APPDATA' => 'C:\\Users\\ln0713\\AppData\\Roaming'
+    'USERNAME' => 'ln0713'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'VISUALSVN_SERVER' => 'D:\\Svn\\'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'Path' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\ln0713\\AppData\\Local\\Microsoft\\WindowsApps;D:\\phpstudy\\php\\php-5.6.27-nts;C:\\Users\\ln0713\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'OS' => 'Windows_NT'
+    'COMPUTERNAME' => 'DESKTOP-Q4RPAI4'
+    'PROCESSOR_REVISION' => '4501'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'ComSpec' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramW6432' => 'C:\\Program Files'
+    'HOMEPATH' => '\\Users\\ln0713'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'TEMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'HOMEDRIVE' => 'C:'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 69 Stepping 1, GenuineIntel'
+    'USERPROFILE' => 'C:\\Users\\ln0713'
+    'TMP' => 'C:\\Users\\ln0713\\AppData\\Local\\Temp'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'windir' => 'C:\\WINDOWS'
+    'YII_PATH' => 'D:\\web\\yi2shop\\'
+    'PHP_SELF' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_NAME' => 'D:\\web\\yi2shop\\yii'
+    'SCRIPT_FILENAME' => 'D:\\web\\yi2shop\\yii'
+    'PATH_TRANSLATED' => 'D:\\web\\yi2shop\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1498354276.4785
+    'REQUEST_TIME' => 1498354276
+    'argv' => [
+        0 => 'D:\\web\\yi2shop\\yii'
+        1 => 'migrate/crate'
+        2 => 'crate_order_table'
+    ]
+    'argc' => 3
+]
