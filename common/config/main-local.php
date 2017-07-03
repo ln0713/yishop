@@ -3,9 +3,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=yi2shop',
-            'username' => 'root',
-            'password' => 'root',
+            'dsn' => 'mysql:host=localhost;dbname=centos',
+            'username' => 'ning',
+            'password' => '770880ning',
             'charset' => 'utf8',
         ],
         'mailer' => [
