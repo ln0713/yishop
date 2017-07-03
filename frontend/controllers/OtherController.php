@@ -19,6 +19,8 @@ use frontend\models\Order;
 use frontend\models\Order_goods;
 use yii\data\Pagination;
 use yii\web\Controller;
+use yii\helpers\ArrayHelper;
+use frontend\components\SphinxClient;
 
 class OtherController extends Controller
 {
@@ -168,5 +170,42 @@ class OtherController extends Controller
     public function actionOrder_goods($order_id){
         $order_goods=Order_goods::findAll(['order_id'=>$order_id]);
         return $this->render('order_goods',['order_goods'=>$order_goods]);
+    }
+
+    public function actionSerarch(){
+        $brand=Brand::find()->all();
+        $query = Goods::find();
+        if($keyword = \Yii::$app->request->get('keyword')){
+            $cl = new SphinxClient();
+            $cl->SetServer ( '127.0.0.1', 9312);
+            $cl->SetConnectTimeout ( 10 );
+            $cl->SetArrayResult ( true );
+            $cl->SetMatchMode ( SPH_MATCH_ALL);
+            $cl->SetLimits(0, 1000);
+            $res = $cl->Query($keyword, 'goods');//shopstore_search
+            if(!isset($res['matches'])){
+//                throw new NotFoundHttpException('没有找到xxx商品');
+                $query->where(['id'=>0]);
+            }else{
+
+                //获取商品id
+                //var_dump($res);exit;
+                $ids = ArrayHelper::map($res['matches'],'id','id');
+                $query->where(['in','id',$ids]);
+            }
+        }
+        $pager = new Pagination([
+            'totalCount'=>$query->count(),
+            'pageSize'=>5
+        ]);
+        $models = $query->limit($pager->limit)->offset($pager->offset)->all();
+    foreach ($ids as $id){
+         $id;break;
+    }
+        $goods_category_id=Goods::findOne(['id'=>$id])->goods_category_id;
+        $tree=Goods_category::findOne(['id'=>$goods_category_id])->tree;
+        $goods_category=Goods_category::findOne(['tree'=>$tree,'parent_id'=>0]);
+        var_dump($goods_category);
+        return $this->render('serarch',['goods_category'=>$goods_category,'models'=>$models,'id'=>$id,'brands'=>$brand]);
     }
 }

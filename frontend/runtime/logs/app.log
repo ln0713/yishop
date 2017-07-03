@@ -52418,3 +52418,2629 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1498473490.5384
     'REQUEST_TIME' => 1498473490
 ]
+2017-06-28 11:53:07 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][error][RedisException] exception 'RedisException' with message 'Redis server went away' in D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php:26
+Stack trace:
+#0 D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php(26): Redis->get('category_html')
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Widget.php(139): frontend\widgets\Goods_categoryWidget->run()
+#2 D:\web\yi2shop\frontend\views\layouts\index.php(160): yii\base\Widget::widget()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(328): require('D:\\web\\yi2shop\\...')
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\web\\yi2shop\\...', Array)
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\web\\yi2shop\\...', Array, Object(frontend\controllers\IndexController))
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<!-- \xE5\xA4\xB4\xE9\x83\xA8 end...')
+#7 D:\web\yi2shop\frontend\controllers\IndexController.php(19): yii\base\Controller->render('index')
+#8 [internal function]: frontend\controllers\IndexController->actionIndex()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#13 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2017-06-28 11:52:58 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2152'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '55565'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498621977.1279
+    'REQUEST_TIME' => 1498621977
+]
+2017-06-28 13:30:50 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request: index/goos' in D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php:127
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('goos', Array)
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/goos', Array)
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#4 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php:114
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#2 {main}
+2017-06-28 13:30:45 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2132'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/goos.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/goos.html'
+    'REMOTE_PORT' => '58500'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498627844.749
+    'REQUEST_TIME' => 1498627844
+]
+2017-06-28 13:31:27 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\web\yi2shop\vendor\yiisoft\yii2\web\Request.php:193
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2017-06-28 13:31:27 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2132'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/goos'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/goos'
+    'REMOTE_PORT' => '58526'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498627887.601
+    'REQUEST_TIME' => 1498627887
+]
+2017-06-28 13:33:14 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\web\yi2shop\vendor\yiisoft\yii2\web\Request.php:193
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2017-06-28 13:33:14 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2228'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/test'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/test'
+    'REMOTE_PORT' => '58568'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498627994.3249
+    'REQUEST_TIME' => 1498627994
+]
+2017-06-28 13:34:24 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\web\yi2shop\vendor\yiisoft\yii2\web\Request.php:193
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2017-06-28 13:34:24 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2228'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/test'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/test'
+    'REMOTE_PORT' => '58599'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498628064.4004
+    'REQUEST_TIME' => 1498628064
+]
+2017-06-28 13:34:59 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\web\yi2shop\vendor\yiisoft\yii2\web\Request.php:193
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2017-06-28 13:34:59 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2228'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/test'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/test'
+    'REMOTE_PORT' => '58615'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498628099.4251
+    'REQUEST_TIME' => 1498628099
+]
+2017-06-28 13:35:04 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\web\yi2shop\vendor\yiisoft\yii2\web\Request.php:193
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2017-06-28 13:35:04 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2132'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/goods'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/goods'
+    'REMOTE_PORT' => '58623'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498628104.7475
+    'REQUEST_TIME' => 1498628104
+]
+2017-06-28 13:36:08 [127.0.0.1][-][-][error][yii\base\ErrorException:4] exception 'yii\base\ErrorException' with message 'syntax error, unexpected '}'' in D:\web\yi2shop\frontend\controllers\IndexController.php:39
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(633): ::spl_autoload_call()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(633): ::class_exists()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(591): yii\base\Module->createControllerByID()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(517): yii\base\Module->createController()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#6 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#7 {main}
+2017-06-28 13:36:07 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2132'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/test.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/test.html'
+    'REMOTE_PORT' => '58663'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498628167.7704
+    'REQUEST_TIME' => 1498628167
+]
+2017-06-28 13:36:36 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\components\SphinxClient' not found' in D:\web\yi2shop\frontend\controllers\IndexController.php:23
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 13:36:35 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2132'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/test.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/test.html'
+    'REMOTE_PORT' => '58684'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498628195.7847
+    'REQUEST_TIME' => 1498628195
+]
+2017-06-28 13:37:07 [127.0.0.1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'frontend\components\SphinxClient' not found' in D:\web\yi2shop\frontend\controllers\IndexController.php:23
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 13:37:06 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2228'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/test.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/test.html'
+    'REMOTE_PORT' => '58702'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498628226.6559
+    'REQUEST_TIME' => 1498628226
+]
+2017-06-28 17:04:07 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: ke' in D:\web\yi2shop\frontend\controllers\IndexController.php:20
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 17:04:03 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '62967'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498640641.6938
+    'REQUEST_TIME' => 1498640641
+]
+2017-06-28 18:10:21 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: goods' in D:\web\yi2shop\frontend\controllers\IndexController.php:45
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 18:10:20 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '50822'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/other/list.html?id=7'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498644620.8712
+    'REQUEST_TIME' => 1498644620
+]
+2017-06-28 18:18:17 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#3 D:\web\yi2shop\frontend\controllers\IndexController.php(40): yii\db\ActiveQuery->all()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 18:18:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51013'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498645097.5647
+    'REQUEST_TIME' => 1498645097
+]
+2017-06-28 18:18:37 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#3 D:\web\yi2shop\frontend\controllers\IndexController.php(40): yii\db\ActiveQuery->all()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 18:18:37 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51027'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498645117.3502
+    'REQUEST_TIME' => 1498645117
+]
+2017-06-28 18:18:56 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#3 D:\web\yi2shop\frontend\controllers\IndexController.php(40): yii\db\ActiveQuery->all()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 18:18:55 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51041'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498645135.9679
+    'REQUEST_TIME' => 1498645135
+]
+2017-06-28 18:21:34 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#3 D:\web\yi2shop\frontend\controllers\IndexController.php(40): yii\db\ActiveQuery->all()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 18:21:34 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2164'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51093'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498645294.6685
+    'REQUEST_TIME' => 1498645294
+]
+2017-06-28 18:26:54 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#3 D:\web\yi2shop\frontend\controllers\IndexController.php(41): yii\db\ActiveQuery->all()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 18:26:53 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2208'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51229'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498645613.8955
+    'REQUEST_TIME' => 1498645613
+]
+2017-06-28 18:27:13 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(213): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(133): yii\db\Query->all()
+#3 D:\web\yi2shop\frontend\controllers\IndexController.php(41): yii\db\ActiveQuery->all()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 18:27:12 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2208'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51238'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498645632.9323
+    'REQUEST_TIME' => 1498645632
+]
+2017-06-28 18:30:18 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(418): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar()
+#4 D:\web\yi2shop\frontend\controllers\IndexController.php(44): yii\db\Query->count()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#11 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-06-28 18:30:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2260'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51318'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498645818.5969
+    'REQUEST_TIME' => 1498645818
+]
+2017-06-28 18:30:38 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(418): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar()
+#4 D:\web\yi2shop\frontend\controllers\IndexController.php(44): yii\db\Query->count()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#11 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-06-28 18:30:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2260'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51330'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498645838.0128
+    'REQUEST_TIME' => 1498645838
+]
+2017-06-28 18:35:21 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(418): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar()
+#4 D:\web\yi2shop\frontend\controllers\IndexController.php(44): yii\db\Query->count()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#11 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-06-28 18:35:21 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2260'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51396'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498646121.6641
+    'REQUEST_TIME' => 1498646121
+]
+2017-06-28 18:37:22 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(418): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar()
+#4 D:\web\yi2shop\frontend\controllers\IndexController.php(44): yii\db\Query->count()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#11 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-06-28 18:37:22 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2260'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51447'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498646242.5566
+    'REQUEST_TIME' => 1498646242
+]
+2017-06-28 18:38:15 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\vendor\yiisoft\yii2\db\Command.php:330
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(325): yii\db\Connection->createCommand()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(418): yii\db\ActiveQuery->createCommand()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\db\ActiveQuery.php(334): yii\db\Query->queryScalar()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\db\Query.php(319): yii\db\ActiveQuery->queryScalar()
+#4 D:\web\yi2shop\frontend\controllers\IndexController.php(44): yii\db\Query->count()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\IndexController->actionIndex()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#11 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#12 {main}
+2017-06-28 18:38:14 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2260'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51484'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498646294.7554
+    'REQUEST_TIME' => 1498646294
+]
+2017-06-28 18:40:27 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: models' in D:\web\yi2shop\frontend\controllers\IndexController.php:67
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 18:40:27 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2260'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51545'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498646427.3323
+    'REQUEST_TIME' => 1498646427
+]
+2017-06-28 19:41:30 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][error][yii\web\HttpException:404] exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\web\yi2shop\vendor\yiisoft\yii2\web\Request.php:193
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(82): yii\web\Request->resolve()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#3 {main}
+2017-06-28 19:41:27 [127.0.0.1][4][sms4kq4mvjtk0mrfdnelkpin21][info][application] $_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2292'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serach'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/other/serach'
+    'REMOTE_PORT' => '52903'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498650087.5669
+    'REQUEST_TIME' => 1498650087
+]
+2017-06-28 19:49:13 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\frontend\controllers\OtherController.php:202
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 19:49:11 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2292'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53035'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498650551.9755
+    'REQUEST_TIME' => 1498650551
+]
+2017-06-28 19:49:51 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined offset: 0' in D:\web\yi2shop\frontend\controllers\OtherController.php:203
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 19:49:50 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2292'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53060'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498650590.4317
+    'REQUEST_TIME' => 1498650590
+]
+2017-06-28 19:55:19 [127.0.0.1][-][-][error][yii\base\ErrorException:4096] exception 'yii\base\ErrorException' with message 'Object of class frontend\models\Goods_category could not be converted to string' in D:\web\yi2shop\frontend\controllers\OtherController.php:205
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 19:55:17 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2292'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53253'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498650917.6458
+    'REQUEST_TIME' => 1498650917
+]
+2017-06-28 19:59:29 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\web\yi2shop\frontend\controllers\OtherController.php:206
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 19:59:27 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53353'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498651167.6942
+    'REQUEST_TIME' => 1498651167
+]
+2017-06-28 20:00:02 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\web\yi2shop\frontend\controllers\OtherController.php:206
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-28 20:00:01 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53361'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498651201.4178
+    'REQUEST_TIME' => 1498651201
+]
+2017-06-28 20:01:11 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: id' in D:\web\yi2shop\frontend\views\other\serarch.php:27
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 D:\web\yi2shop\frontend\controllers\OtherController.php(208): yii\base\Controller->render()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\OtherController->actionSerarch()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 20:01:09 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53379'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498651269.5194
+    'REQUEST_TIME' => 1498651269
+]
+2017-06-28 20:02:01 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in D:\web\yi2shop\frontend\views\other\serarch.php:170
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 D:\web\yi2shop\frontend\controllers\OtherController.php(208): yii\base\Controller->render()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\OtherController->actionSerarch()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 20:01:59 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53410'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498651319.1341
+    'REQUEST_TIME' => 1498651319
+]
+2017-06-28 20:02:40 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in D:\web\yi2shop\frontend\views\other\serarch.php:170
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 D:\web\yi2shop\frontend\controllers\OtherController.php(209): yii\base\Controller->render()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\OtherController->actionSerarch()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 20:02:38 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53422'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498651358.0713
+    'REQUEST_TIME' => 1498651358
+]
+2017-06-28 20:02:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: brands' in D:\web\yi2shop\frontend\views\other\serarch.php:170
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(152): yii\base\View->renderFile()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(381): yii\base\View->render()
+#3 D:\web\yi2shop\frontend\controllers\OtherController.php(209): yii\base\Controller->render()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): frontend\controllers\OtherController->actionSerarch()
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#7 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#8 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#10 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#11 {main}
+2017-06-28 20:02:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'sms4kq4mvjtk0mrfdnelkpin21'
+    '_csrf-frontend' => '5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2296'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '53427'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=sms4kq4mvjtk0mrfdnelkpin21; _csrf-frontend=5b1365b6d58b6a2493a4e0787092d6760ff791e47dd0e2027be79ccfe2b9a7a7a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22CkDU1ESngI1P-6KKYtdBmG5v-jklZGTU%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498651364.8214
+    'REQUEST_TIME' => 1498651364
+]
+2017-06-29 09:05:46 [127.0.0.1][4][hbdv34rchcb7bmpf7ffcfd8qp7][error][RedisException] exception 'RedisException' with message 'Redis server went away' in D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php:26
+Stack trace:
+#0 D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php(26): Redis->get('category_html')
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Widget.php(139): frontend\widgets\Goods_categoryWidget->run()
+#2 D:\web\yi2shop\frontend\views\layouts\index.php(160): yii\base\Widget::widget()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(328): require('D:\\web\\yi2shop\\...')
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\web\\yi2shop\\...', Array)
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\web\\yi2shop\\...', Array, Object(frontend\controllers\IndexController))
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<!-- \xE5\xA4\xB4\xE9\x83\xA8 end...')
+#7 D:\web\yi2shop\frontend\controllers\IndexController.php(24): yii\base\Controller->render('index')
+#8 [internal function]: frontend\controllers\IndexController->actionIndex()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#13 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2017-06-29 09:05:43 [127.0.0.1][4][hbdv34rchcb7bmpf7ffcfd8qp7][info][application] $_COOKIE = [
+    'advanced-frontend' => 'hbdv34rchcb7bmpf7ffcfd8qp7'
+    '_csrf-frontend' => '7f5d9d69ceb7d42becf417a8e17ce851a0ec9777cce6e364b91891218d8d0422a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"n-HGvEU0hheXd8U6jn6Osx3D9KRxPhzy\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2132'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51580'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=hbdv34rchcb7bmpf7ffcfd8qp7; _csrf-frontend=7f5d9d69ceb7d42becf417a8e17ce851a0ec9777cce6e364b91891218d8d0422a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22n-HGvEU0hheXd8U6jn6Osx3D9KRxPhzy%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498698343.5792
+    'REQUEST_TIME' => 1498698343
+]
+2017-06-29 09:07:38 [127.0.0.1][4][hbdv34rchcb7bmpf7ffcfd8qp7][error][RedisException] exception 'RedisException' with message 'Redis server went away' in D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php:26
+Stack trace:
+#0 D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php(26): Redis->get('category_html')
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Widget.php(139): frontend\widgets\Goods_categoryWidget->run()
+#2 D:\web\yi2shop\frontend\views\layouts\index.php(160): yii\base\Widget::widget()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(328): require('D:\\web\\yi2shop\\...')
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\web\\yi2shop\\...', Array)
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\web\\yi2shop\\...', Array, Object(frontend\controllers\IndexController))
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<!-- \xE5\xA4\xB4\xE9\x83\xA8 end...')
+#7 D:\web\yi2shop\frontend\controllers\IndexController.php(24): yii\base\Controller->render('index')
+#8 [internal function]: frontend\controllers\IndexController->actionIndex()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#13 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2017-06-29 09:07:36 [127.0.0.1][4][hbdv34rchcb7bmpf7ffcfd8qp7][info][application] $_COOKIE = [
+    'advanced-frontend' => 'hbdv34rchcb7bmpf7ffcfd8qp7'
+    '_csrf-frontend' => '7f5d9d69ceb7d42becf417a8e17ce851a0ec9777cce6e364b91891218d8d0422a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"n-HGvEU0hheXd8U6jn6Osx3D9KRxPhzy\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2036'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51624'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=hbdv34rchcb7bmpf7ffcfd8qp7; _csrf-frontend=7f5d9d69ceb7d42becf417a8e17ce851a0ec9777cce6e364b91891218d8d0422a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22n-HGvEU0hheXd8U6jn6Osx3D9KRxPhzy%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498698455.9884
+    'REQUEST_TIME' => 1498698455
+]
+2017-06-29 09:07:57 [127.0.0.1][4][hbdv34rchcb7bmpf7ffcfd8qp7][error][RedisException] exception 'RedisException' with message 'Redis server went away' in D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php:26
+Stack trace:
+#0 D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php(26): Redis->get('category_html')
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Widget.php(139): frontend\widgets\Goods_categoryWidget->run()
+#2 D:\web\yi2shop\frontend\views\layouts\index.php(160): yii\base\Widget::widget()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(328): require('D:\\web\\yi2shop\\...')
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\web\\yi2shop\\...', Array)
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\web\\yi2shop\\...', Array, Object(frontend\controllers\IndexController))
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<!-- \xE5\xA4\xB4\xE9\x83\xA8 end...')
+#7 D:\web\yi2shop\frontend\controllers\IndexController.php(24): yii\base\Controller->render('index')
+#8 [internal function]: frontend\controllers\IndexController->actionIndex()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#13 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2017-06-29 09:07:54 [127.0.0.1][4][hbdv34rchcb7bmpf7ffcfd8qp7][info][application] $_COOKIE = [
+    'advanced-frontend' => 'hbdv34rchcb7bmpf7ffcfd8qp7'
+    '_csrf-frontend' => '7f5d9d69ceb7d42becf417a8e17ce851a0ec9777cce6e364b91891218d8d0422a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"n-HGvEU0hheXd8U6jn6Osx3D9KRxPhzy\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2132'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '51645'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=hbdv34rchcb7bmpf7ffcfd8qp7; _csrf-frontend=7f5d9d69ceb7d42becf417a8e17ce851a0ec9777cce6e364b91891218d8d0422a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22n-HGvEU0hheXd8U6jn6Osx3D9KRxPhzy%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498698474.845
+    'REQUEST_TIME' => 1498698474
+]
+2017-06-29 09:08:46 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined variable: ids' in D:\web\yi2shop\frontend\controllers\OtherController.php:202
+Stack trace:
+#0 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): ::call_user_func_array:{D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php:57}()
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams()
+#2 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction()
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest()
+#5 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#6 {main}
+2017-06-29 09:08:44 [127.0.0.1][-][-][info][application] $_GET = [
+    'keyword' => '华为'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => 'hbdv34rchcb7bmpf7ffcfd8qp7'
+    '_csrf-frontend' => '7f5d9d69ceb7d42becf417a8e17ce851a0ec9777cce6e364b91891218d8d0422a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"n-HGvEU0hheXd8U6jn6Osx3D9KRxPhzy\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2132'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/other/serarch.html?keyword=%E5%8D%8E%E4%B8%BA'
+    'QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_QUERY_STRING' => 'keyword=%E5%8D%8E%E4%B8%BA'
+    'REDIRECT_URL' => '/other/serarch.html'
+    'REMOTE_PORT' => '51690'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=hbdv34rchcb7bmpf7ffcfd8qp7; _csrf-frontend=7f5d9d69ceb7d42becf417a8e17ce851a0ec9777cce6e364b91891218d8d0422a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22n-HGvEU0hheXd8U6jn6Osx3D9KRxPhzy%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://www.yi2shop.com/index/index.html'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1498698524.3083
+    'REQUEST_TIME' => 1498698524
+]
+2017-07-03 16:53:58 [127.0.0.1][4][0n8j7h2sne61tbtd9qs205k793][error][RedisException] exception 'RedisException' with message 'Redis server went away' in D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php:26
+Stack trace:
+#0 D:\web\yi2shop\frontend\widgets\Goods_categoryWidget.php(26): Redis->get('category_html')
+#1 D:\web\yi2shop\vendor\yiisoft\yii2\base\Widget.php(139): frontend\widgets\Goods_categoryWidget->run()
+#2 D:\web\yi2shop\frontend\views\layouts\index.php(160): yii\base\Widget::widget()
+#3 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(328): require('D:\\web\\yi2shop\\...')
+#4 D:\web\yi2shop\vendor\yiisoft\yii2\base\View.php(250): yii\base\View->renderPhpFile('D:\\web\\yi2shop\\...', Array)
+#5 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(396): yii\base\View->renderFile('D:\\web\\yi2shop\\...', Array, Object(frontend\controllers\IndexController))
+#6 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(382): yii\base\Controller->renderContent('<!-- \xE5\xA4\xB4\xE9\x83\xA8 end...')
+#7 D:\web\yi2shop\frontend\controllers\IndexController.php(24): yii\base\Controller->render('index')
+#8 [internal function]: frontend\controllers\IndexController->actionIndex()
+#9 D:\web\yi2shop\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#10 D:\web\yi2shop\vendor\yiisoft\yii2\base\Controller.php(156): yii\base\InlineAction->runWithParams(Array)
+#11 D:\web\yi2shop\vendor\yiisoft\yii2\base\Module.php(523): yii\base\Controller->runAction('index', Array)
+#12 D:\web\yi2shop\vendor\yiisoft\yii2\web\Application.php(102): yii\base\Module->runAction('index/index', Array)
+#13 D:\web\yi2shop\vendor\yiisoft\yii2\base\Application.php(380): yii\web\Application->handleRequest(Object(yii\web\Request))
+#14 D:\web\yi2shop\frontend\web\index.php(17): yii\base\Application->run()
+#15 {main}
+2017-07-03 16:53:55 [127.0.0.1][4][0n8j7h2sne61tbtd9qs205k793][info][application] $_COOKIE = [
+    'advanced-frontend' => '0n8j7h2sne61tbtd9qs205k793'
+    '_csrf-frontend' => '3567a7161c98c824c8ae193be4fce2bae4793353fa38d732eb91be0708cf154fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"KPKusvlKOD6gTZv3LuKaPfNyuWIcUgfp\";}'
+    '_identity-frontend' => '3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba:2:{i:0;s:18:\"_identity-frontend\";i:1;s:15:\"[4,null,604800]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\MySQL\\MySQL Server 5.5\\bin;D:\\www\\mysql\\bin;D:\\Svn\\bin;D:\\git\\Git\\cmd;D:\\Svns\\bin;D:\\gits\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SYSTEMROOT' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'D:/phpstudy/php/php-5.6.27-nts/'
+    '_FCGI_SHUTDOWN_EVENT_' => '2188'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/index/index.html'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REDIRECT_URL' => '/index/index.html'
+    'REMOTE_PORT' => '54575'
+    'SCRIPT_FILENAME' => 'D:/web/yi2shop/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'D:/web/yi2shop/frontend/web'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.yi2shop.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2j mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\WINDOWS'
+    'HTTP_COOKIE' => 'advanced-frontend=0n8j7h2sne61tbtd9qs205k793; _csrf-frontend=3567a7161c98c824c8ae193be4fce2bae4793353fa38d732eb91be0708cf154fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22KPKusvlKOD6gTZv3LuKaPfNyuWIcUgfp%22%3B%7D; _identity-frontend=3c24c052c6d29121161e3308c65fbf9c25a9225b1cb69477057265539d05902ba%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A15%3A%22%5B4%2Cnull%2C604800%5D%22%3B%7D'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_HOST' => 'www.yi2shop.com'
+    'REDIRECT_STATUS' => '200'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1499072035.6415
+    'REQUEST_TIME' => 1499072035
+]
