@@ -22,15 +22,21 @@ class WechatController extends Controller
 
     ////url 就是用于接受微信服务器发送的请求
     public function actionIndex(){
+        //echo 'wechat-index';
+        //echo  $_GET['echostr'];
         $app = new Application(\Yii::$app->params['wechat']);
-        // $message->FromUserName // 用户的 openid
-        $app->server->setMessageHandler(function ($message){
+
+        $app->server->setMessageHandler(function ($message) {
+            // $message->FromUserName // 用户的 openid
+            // $message->MsgType // 消息类型：event, text....
+            //return "您好！欢迎关注我!";
             switch ($message->MsgType){
-                case 'text'://文本消息
+                case 'text':
+                    //文本消息
                     switch ($message->Content){
                         case '成都':
                             $xml = simplexml_load_file('http://flash.weather.com.cn/wmaps/xml/sichuan.xml');
-                            foreach ($xml as $city){
+                            foreach($xml as $city){
                                 if($city['cityname'] == '成都'){
                                     $weather = $city['stateDetailed'];
                                     break;
@@ -73,6 +79,9 @@ class WechatController extends Controller
                             return [$news1,$news2,$news3];
                             break;
                     }
+
+
+
                     return '收到你的消息:'.$message->Content;
                     break;
                 case 'event'://事件
@@ -109,6 +118,7 @@ class WechatController extends Controller
         $response = $app->server->serve();
 // 将响应输出
         $response->send(); // Laravel 里请使用：return $response;
+
     }
 
 
